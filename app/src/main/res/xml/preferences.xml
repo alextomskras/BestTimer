@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <com.pavelsikun.seekbarpreference.SeekBarPreferenceCompat
-        android:key="com.resocoder.timer.timer_length"
+        android:key="com.example.besttimer.timer_length"
         android:title="Timer Length"
         android:summary="For how many minutes should the timer run?"
         android:defaultValue="10"

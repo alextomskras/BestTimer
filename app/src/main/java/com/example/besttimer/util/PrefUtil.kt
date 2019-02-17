@@ -8,13 +8,13 @@ import com.example.besttimer.TimerActivity
 class PrefUtil {
     companion object {
 
-        private const val TIMER_LENGTH_ID = "com.example.timer.timer_length"
+        private const val TIMER_LENGTH_ID = "com.example.besttimer.timer_length"
         fun getTimerLength(context: Context): Int{
             val preferences = PreferenceManager.getDefaultSharedPreferences(context)
             return preferences.getInt(TIMER_LENGTH_ID, 10)
         }
 
-        private const val PREVIOUS_TIMER_LENGTH_SECONDS_ID = "com.example.timer.previous_timer_length_seconds"
+        private const val PREVIOUS_TIMER_LENGTH_SECONDS_ID = "com.example.besttimer.previous_timer_length_seconds"
 
         fun getPreviousTimerLengthSeconds(context: Context): Long{
             val preferences = PreferenceManager.getDefaultSharedPreferences(context)
@@ -28,7 +28,7 @@ class PrefUtil {
         }
 
 
-        private const val TIMER_STATE_ID = "com.example.timer.timer_state"
+        private const val TIMER_STATE_ID = "com.example.besttimer.timer_state"
 
         fun getTimerState(context: Context): TimerActivity.TimerState{
             val preferences = PreferenceManager.getDefaultSharedPreferences(context)
@@ -44,7 +44,7 @@ class PrefUtil {
         }
 
 
-        private const val SECONDS_REMAINING_ID = "com.example.timer.seconds_remaining"
+        private const val SECONDS_REMAINING_ID = "com.example.besttimer.seconds_remaining"
 
         fun getSecondsRemaining(context: Context): Long{
             val preferences = PreferenceManager.getDefaultSharedPreferences(context)
@@ -58,7 +58,7 @@ class PrefUtil {
         }
 
 
-        private const val ALARM_SET_TIME_ID = "com.example.timer.backgrounded_time"
+        private const val ALARM_SET_TIME_ID = "com.example.besttimer.backgrounded_time"
 
         fun getAlarmSetTime(context: Context): Long{
             val preferences = PreferenceManager.getDefaultSharedPreferences(context)
